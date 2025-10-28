@@ -40,9 +40,18 @@ public class craps_sim {
                     System.out.println("Roll 2: " + d2);
                     System.out.println("Sum: " + sum);
 
-
+                    if (sum == point) {
+                        System.out.println("/n You win!");
+                        break;
+                    } else {
+                        System.out.println();
+                    }
                 }
             }
+
+            System.out.println("Play again? [Y/N] ");
+            play = scan.next();
+            System.out.println();
         }
     }
 }
